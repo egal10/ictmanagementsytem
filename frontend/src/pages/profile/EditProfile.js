@@ -91,9 +91,7 @@ const EditProfile = () => {
       {isLoading && <Loader />}
 
       <Card cardClass={"card --flex-dir-column"}>
-        <span className="profile-photo">
-          <img src={user?.photo} alt="profilepic" />
-        </span>
+        
         <form className="--form-control --m" onSubmit={saveProfile}>
           <span className="profile-data">
             <p>
@@ -130,10 +128,7 @@ const EditProfile = () => {
                 rows="10"
               ></textarea>
             </p>
-            <p>
-              <label>Photo:</label>
-              <input type="file" name="image" onChange={handleImageChange} />
-            </p>
+           
             <div>
               <button className="--btn --btn-primary">Edit Profile</button>
             </div>

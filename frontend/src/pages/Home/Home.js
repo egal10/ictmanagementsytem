@@ -9,10 +9,7 @@ const Home = () => {
   return (
     <div className="home">
       <nav className="container --flex-between ">
-        <div className="logo">
-          <RiProductHuntLine size={35} />
-        </div>
-
+        
         <ul className="home-links">
           <ShowOnLogout>
             <li>
@@ -38,26 +35,14 @@ const Home = () => {
       {/* HERO SECTION */}
       <section className="container hero">
         <div className="hero-text">
-          <h2>Inventory {"&"} Stock Management Solution</h2>
+          <h2>KEBS ICT Management System</h2>
           <p>
-            Inventory system to control and manage proucts in the warehouse in
-            real timeand integrated to make it easier to develop your business.
+          For ensuring that the organization's technology infrastructure is efficient, reliable, and secure, and that it supports the organization's goals and objectives..
           </p>
-          <div className="hero-buttons">
-            <button className="--btn --btn-secondary">
-              <Link to="/dashboard">Free Trial 1 Month</Link>
-            </button>
-          </div>
-          <div className="--flex-start">
-            <NumberText num="14K" text="Brand Owners" />
-            <NumberText num="23K" text="Active Users" />
-            <NumberText num="500+" text="Partners" />
-          </div>
+          
         </div>
 
-        <div className="hero-image">
-          <img src={heroImg} alt="Inventory" />
-        </div>
+        
       </section>
     </div>
   );

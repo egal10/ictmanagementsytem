@@ -20,7 +20,7 @@ const ProductForm = ({
       <Card cardClass={"card"}>
         <form onSubmit={saveProduct}>
           <Card cardClass={"group"}>
-            <label>Product Image</label>
+            <label>Device Image</label>
             <code className="--color-dark">
               Supported Formats: jpg, jpeg, png
             </code>
@@ -38,43 +38,43 @@ const ProductForm = ({
               <p>No image set for this poduct.</p>
             )}
           </Card>
-          <label>Product Name:</label>
+          <label>Device Name:</label>
           <input
             type="text"
-            placeholder="Product name"
+            placeholder="Device name"
             name="name"
             value={product?.name}
             onChange={handleInputChange}
           />
 
-          <label>Product Category:</label>
+          <label>Manufacturer:</label>
           <input
             type="text"
-            placeholder="Product Category"
+            placeholder="Manufacturer"
             name="category"
             value={product?.category}
             onChange={handleInputChange}
           />
 
-          <label>Product Price:</label>
+          <label>Device Price:</label>
           <input
             type="text"
-            placeholder="Product Price"
+            placeholder="Device Price"
             name="price"
             value={product?.price}
             onChange={handleInputChange}
           />
 
-          <label>Product Quantity:</label>
+          <label>Device Quantity:</label>
           <input
             type="text"
-            placeholder="Product Quantity"
+            placeholder="Device Quantity"
             name="quantity"
             value={product?.quantity}
             onChange={handleInputChange}
           />
 
-          <label>Product Description:</label>
+          <label>Device Description:</label>
           <ReactQuill
             theme="snow"
             value={description}
